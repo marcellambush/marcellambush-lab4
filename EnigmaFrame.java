@@ -1,6 +1,4 @@
 import javax.swing.*;
-import javax.swing.border.TitledBorder;
-
 import java.awt.*;
 
 public class EnigmaFrame extends JFrame {
@@ -18,14 +16,13 @@ public class EnigmaFrame extends JFrame {
         JPanel rotorPanel = new JPanel(new FlowLayout());
         JPanel textPanel = new JPanel(new FlowLayout());
         JPanel buttonPanel = new JPanel(new FlowLayout());
-        rotorPanel.setBorder(new TitledBorder("ENIGMA"));
         rotorPanel.add(new JLabel("Inner:"));
         innerRotor = new JComboBox<>(new Integer[]{1, 2, 3, 4, 5});
         rotorPanel.add(innerRotor);
         rotorPanel.add(new JLabel("Middle:"));
         middleRotor = new JComboBox<>(new Integer[]{1, 2, 3, 4, 5});
         rotorPanel.add(middleRotor);
-        rotorPanel.add(new JLabel("OuterE:"));
+        rotorPanel.add(new JLabel("Outer:"));
         outerRotor = new JComboBox<>(new Integer[]{1, 2, 3, 4, 5});
         rotorPanel.add(outerRotor);
         rotorPanel.add(new JLabel("Initial Positions:"));
